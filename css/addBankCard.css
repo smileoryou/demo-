@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 0.16rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
+}
+.input-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /*设置为弹性盒子布局*/
+  display: -webkit-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse; /*决定主轴的方向 主轴为垂直方向，起点在下沿 */
+  -ms-flex-flow: column-reverse;
+  flex-flow: column-reverse; /*flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。*/
+  -webkit-flex-flow:column-reverse;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; /*align-items属性定义项目在交叉轴上如何对齐*/
+  height: 0.68rem;
+}
+
+.input-container input {
+  -webkit-box-ordinal-group: 11;
+  order: 10;
+  -webkit-order:10;
+  -ms-flex-order: 10;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #eeeeee;
+  /* text-indent: 10px; */
+  width: 92%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #333333;
+  letter-spacing: 0;
+}
+/*设置透明度 使*placeholder属性的透明度设置为0不可见*/
+.input-container input::-moz-placeholder {
+  opacity: 0;
+}
+
+.input-container input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.input-container input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+.input-container input,
+.input-container label {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.input-container label {
+  -webkit-box-ordinal-group: 101;
+  -ms-flex-order: 100;
+  order: 100;
+  -webkit-order:100;
+  /* color: #3f4f5b; */
+  -webkit-transform-origin: left bottom;
+  transform-origin: left bottom;
+  -webkit-transform: translate(0.1rem, 0.4rem);
+  -moz-transform: translate(0.1rem, 0.4rem);
+  -o-transform: translate(0.1rem, 0.4rem);
+  -ms-transform: translate(0.1rem, 0.4rem);
+  transform: translate(0.1rem, 0.4rem);
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #666666;
+  letter-spacing: 0;
+}
+.input-container .bottom-line {
+  order: 2;
+  -webkit-order:2;
+  width: 0;
+  height: 0.02rem;
+  background: #47baf6;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+
+.input-container input:focus {
+  border-bottom-color: #fff;
+}
+
+.input-container input:focus ~ div {
+  /* width: 100%; */
+  width: 92%;
+  margin: 0 auto;
+}
+
+.input-container input:not(:placeholder) ~ div {
+  /* width: 100%; */
+  width: 92%;
+  margin: 0 auto;
+}
+
+.input-container input:focus + label{
+  /* color: #999999; */
+  font-family: PingFangSC-Regular;
+  font-size: 0.13rem;
+  color: #999999;
+  letter-spacing: 0;
+  -webkit-transform: translate(0.1rem) scale(0.9);
+  transform: translate(0.1rem) scale(0.9);
+}
+
+
+
+ .lableReadonly  {
+  /* color: #999999; */
+  font-family: PingFangSC-Regular !important;;
+  font-size: 0.13rem !important;;
+  color: #666666 !important;;
+  letter-spacing: 0 !important;;
+  -webkit-transform: translate(0.1rem) scale(0.9) !important;;
+  transform: translate(0.1rem) scale(0.9) !important;;
+}
+
+.input-container input:not(:placeholder-shown) + label {
+  /* color: #999999; */
+  font-family: PingFangSC-Regular;
+  font-size: 0.13rem;
+  color: #999999;
+  letter-spacing: 0;
+  -webkit-transform: translate(0.1rem) scale(0.9);
+  transform: translate(0.1rem) scale(0.9);
+}
+
+
+
+
+.identifyingCode {
+  display: -webkit-box !important;
+  display: inline-block;
+  -webkit-box-pack: end;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-transform: translate(0, 0.16rem);
+  transform: translate(0px, 0.16rem);
+  order: 98;
+  -webkit-order:98;
+  width: 92%;
+  height: 0;
+  margin: 0 auto;
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #24a1ee;
+  letter-spacing: 0;
+}
+.closeInfo {
+  display: -webkit-box !important;
+  display: inline-block;
+  -webkit-box-pack: end;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-transform: translate(0, 0.16rem);
+  transform: translate(0px, 0.16rem);
+  order: 98;
+  -webkit-order:98;
+  width: 92%;
+  height: 0;
+  margin: 0 auto;
+  display: none !important;
+}
+.clear-input-img {
+  width: 0.16rem;
+  height: 0.16rem;
+}
+
+.input-container input:focus ~ a{
+  /* width: 100%; */
+  display: -webkit-box !important;
+}
+
+.input-container input:not(:placeholder-shown) ~ a {
+  /* width: 100%; */
+  display: -webkit-box !important;
+}
+
+.btnAdd {
+  width: 92%;
+  height: 0.51rem;
+  background: #118ee9;
+  border-radius: 5px;
+  margin: 0.515rem auto 0 auto;
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #ffffff;
+  letter-spacing: 0.015rem;
+  text-align: center;
+  line-height: 0.51rem;
+}
+/*
+.input-container  .identifyingCode {
+   -webkit-box-ordinal-group: 101;
+  -ms-flex-order: 101;
+  order: 101;
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #666666;
+  letter-spacing: 0;
+} */
+
+/*媒体查询*/
+
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 160.4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 210.4px;
+  }
+}

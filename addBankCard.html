@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/addBankCard.css">
+    <script src="./scripts/zepto.js"></script>
+    <title>添加银行卡</title>
+</head>
+
+<body>
+    <div id="formDiv">
+        <div class="input-container">
+            <input type="input" id="inputName" placeholder="真实姓名" readonly  >
+            <label for="inputName"  class="lableReadonly">真实姓名</label>
+            <!-- <a class="closeInfo" href="javascript:void(0)">
+                <img src="./images/closeInfo.png" class="clear-input-img" alt="" />
+            </a> -->
+            <div class="bottom-line"></div>
+        </div>
+        <div class="input-container">
+            <input type="input" id="inputID" placeholder="身份证号" readonly>
+            <label for="inputID" class="lableReadonly">身份证号</label>
+            <!-- <a class="closeInfo" href="javascript:void(0)">
+                <img src="./images/closeInfo.png" class="clear-input-img" alt="" />
+            </a> -->
+            <div class="bottom-line"></div>
+        </div>
+        <div class="input-container">
+            <input type="input" id="inputCardName" placeholder="银行名称">
+            <label for="inputCardName">银行名称</label>
+            <a class="closeInfo" href="javascript:void(0)">
+                <img src="./images/closeInfo.png" class="clear-input-img" alt="" />
+            </a>
+            <div class="bottom-line"></div>
+        </div>
+        <div class="input-container">
+            <input type="input" id="inputCard" placeholder="银行卡号">
+            <label for="inputCard">银行卡号</label>
+            <a class="closeInfo" href="javascript:void(0)">
+                <img src="./images/closeInfo.png" class="clear-input-img" alt="" />
+            </a>
+            <div class="bottom-line"></div>
+        </div>
+        <div class="input-container">
+            <input type="input" id="inputTel" placeholder="银行预留手机号" required>
+            <label for="inputTel">银行预留手机号</label>
+            <a class="closeInfo" href="javascript:void(0)">
+                <img src="./images/closeInfo.png" class="clear-input-img" alt="" />
+            </a>
+            <div class="bottom-line"></div>
+        </div>
+        <div class="input-container  input-new">
+            <input type="input" id="inputidentifyingCode" placeholder="验证码">
+            <label for="inputidentifyingCode">验证码</label>
+            <a class="identifyingCode" id="btnCode">发送验证码</a>
+            <div class="bottom-line">
+            </div>
+        </div>
+    </div>
+    <div class="btnAdd">添加</div>
+    <script src="./scripts/addBankCard.js"></script>
+</body>
+
+</html>

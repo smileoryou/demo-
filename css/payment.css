@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 0.16rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
+  background: #eeeeee;
+}
+.outer {
+  height: 100%;
+  box-sizing: border-box;
+}
+.top {
+  position: relative;
+}
+.amountInformation {
+  background: url(../images/combinedShape.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1.59rem;
+  margin-left: -1px;
+}
+.amountInformation .repaymentMoney {
+  font-family: PingFangSC-Regular;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 0.185rem;
+}
+.amountInformation .repaymentMoneyNumber {
+  font-family: HelveticaNeue-Medium;
+  font-size: 0.33rem;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 0.045rem;
+}
+.amountInformation .borderline {
+  border: 0.01rem solid #ddecff;
+  margin: 0.17rem 0.17rem 0 0.17rem;
+}
+.amountInformation .repaymentNumber {
+  padding: 0.145rem 0.17rem 0 0.17rem;
+  font-size: 0.14rem;
+  display: -webkit-box;
+  /* -webkit-box-pack: justify; */
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal; /*弹性布局方向*/
+  -webkit-box-pack: justify;
+}
+.amountInformation .repaymentNumber .repaymentNumber-left {
+  font-family: PingFangSC-Regular;
+
+  color: #999999;
+  letter-spacing: 0;
+}
+.amountInformation .repaymentNumber .repaymentNumber-right {
+  font-family: PingFangSC-Medium;
+  color: #333333;
+  letter-spacing: 0;
+}
+.borderCenter {
+  width: 100%;
+  height: 0.1rem;
+  background: #eeeeee;
+  margin-top: -0.1rem;
+  position: absolute;
+  z-index: -100;
+}
+.borderCenter1 {
+  width: 100%;
+  height: 0.08rem;
+  background: #eeeeee;
+}
+
+/*中间部分*/
+.card {
+  list-style: none;
+  height: 0.53rem;
+  line-height: 0.53rem;
+  border-bottom: 1px solid #cccccc;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  background-color: #ffffff;
+  padding: 0 0.1rem;
+}
+.leftSec {
+  display: -webkit-box;
+  /* -webkit-box-pack: justify; */
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  font-size: 0.16rem;
+}
+.bankName {
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+  color: #333333;
+  letter-spacing: 0;
+}
+.newCard {
+  height: 0.42rem;
+  line-height: 0.42rem;
+  border: none;
+}
+/* .card:first-child {
+  border-top: 1px solid #cacaca;
+} */
+.bankimage {
+  display: block;
+  height: 0.35rem;
+  width: 0.35rem;
+  margin: 0 0.065rem 0 0.15rem;
+}
+.newBankImage {
+  height: 0.21rem;
+  width: 0.21rem;
+  margin-left: 0.19rem;
+}
+
+/*自定义radio按钮*/
+.demo--radio {
+  display: none;
+}
+
+.demo--radioInput {
+  background-color: #fff;
+  border: 1px solid #979797;
+  border-radius: 100%;
+  display: inline-block;
+  height: 0.17rem;
+  vertical-align: middle;
+  width: 0.17rem;
+  line-height: 1;
+  margin-right: 0.1rem;
+}
+
+.demo--radio:checked + .demo--radioInput:after {
+  background-color: #d2eeff;
+  background-image: url(../images/radioCheck.png);
+  background-size: 0.17rem;
+  border-radius: 100%;
+  content: "";
+  display: inline-block;
+  height: 0.17rem;
+  width: 0.17rem;
+  margin-right: 0.1rem;
+}
+
+/*中间的boder*/
+.borderCenter2 {
+  width: 100%;
+  height: 0.18rem;
+  background: #eeeeee;
+}
+
+/*支付宝付款*/
+.alipay {
+  height: 0.56rem;
+}
+.btnRepayment {
+  height: 0.49rem;
+  margin: 0.34rem  auto 0 auto;
+  width: 92%;
+  line-height: 0.49rem;
+  text-align: center;
+  background-color: #1094ef;
+  border-radius: 5px;
+  font-family: PingFangSC-Regular;
+  font-size: 0.15rem;
+  color: #ffffff;
+  letter-spacing: 1.45px;
+}
+
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 160.4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 210.4px;
+  }
+}

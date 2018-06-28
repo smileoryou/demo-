@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 0.16rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
+  background-color: #eeeeee;
+}
+.telInfo {
+  font-family: PingFangSC-Regular;
+  font-size: 0.12rem;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 0.12rem;
+  margin: 0.14rem auto 0 0.15rem;
+}
+.telCode {
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  font-family: PingFangSC-Regular;
+  font-size: 0.15rem;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 0.12rem;
+  margin: 0.155rem auto 0 auto;
+  height: 0.49rem;
+  line-height: 0.49rem;
+  background-color: #ffffff;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+.telCode-num {
+  color: #333333;
+  margin-left: 0.15rem;
+}
+.telCode-input {
+  font-size: 0.15rem;
+  color: #333333;
+  border: none;
+  height: 0.45rem;
+  line-height: 0.45rem;
+  margin-left: 0.21rem;
+}
+.telCode-btn {
+  background: #4a90e2;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 0.15rem;
+  color: #ffffff;
+  width: 0.7rem;
+  height: 0.28rem;
+  line-height: 0.28rem;
+  margin-right: 0.16rem;
+}
+
+/*设置透明度 使*placeholder属性的透明度设置为0不可见*/
+.telCode input::-moz-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 0.15rem;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 0.16rem;
+}
+
+.telCode input::-webkit-input-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 0.15rem;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 0.16rem;
+}
+
+.telCode input:-ms-input-placeholder {
+  font-family: PingFangSC-Regular;
+  font-size: 0.15rem;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 0.16rem;
+}
+.telInfo-tip {
+  margin-top: 0.085rem;
+}
+.btnPay {
+  background: #118ee9;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #ffffff;
+  letter-spacing: 1.45px;
+  text-align: center;
+  width: 92%;
+  height: 0.49rem;
+  line-height: 0.49rem;
+  margin: 0.5rem auto 0 auto; 
+}
+
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 160.4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 210.4px;
+  }
+}

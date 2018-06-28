@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/payment.css">
+    <title>收银台</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="top">
+            <div class="amountInformation">
+                <p class="repaymentMoney">还款金额(元)</p>
+                <p class="repaymentMoneyNumber">1000</p>
+                <p class="borderline"></p>
+                <div class=" repaymentNumber">
+                    <p class="repaymentNumber-left">还款期数</p>
+                    <p class="repaymentNumber-right">第2/9期</p>
+                </div>
+            </div>
+            <div class="borderCenter"></div>
+        </div>
+        <div class="borderCenter1"></div>
+        <ul>
+            <li class="card">
+                <div class="leftSec">
+                    <img src="./images/CMB.png" class="bankimage" />
+                    <span class="bankName">招商银行储蓄卡(12113)</span>
+                </div>
+                <div class="checkRadio">
+                    <label class="demo--label">
+                        <input class="demo--radio" type="radio" name="bank">
+                        <span class="demo--radioInput"></span>
+                    </label>
+                </div>
+            </li>
+            <li class="card">
+                <div class="leftSec">
+                    <img src="./images/CMB.png" class="bankimage" />
+                    <span class="bankName">招商银行储蓄卡</span>
+                </div>
+                <div class="checkRadio">
+                    <label class="demo--label">
+                        <input class="demo--radio" type="radio" name="bank">
+                        <span class="demo--radioInput"></span>
+                    </label>
+                </div>
+            </li>
+            <li class="card newCard">
+                <div class="leftSec">
+                    <img src="./images/plusImage.png" class="bankimage newBankImage" />
+                    <span class="bankName">添加新卡</span>
+                </div>
+            </li>
+        </ul>
+        <div class="borderCenter2"></div>
+        <!-- 支付宝付款 -->
+        <div class="card alipay">
+            <div class="leftSec">
+                <img src="./images/alipay.png" class="bankimage" />
+                <span class="bankName">支付宝支付</span>
+            </div>
+            <div class="checkRadio">
+                <label class="demo--label">
+                    <input class="demo--radio" type="radio" name="bank">
+                    <span class="demo--radioInput"></span>
+                </label>
+            </div>
+        </div>
+        <div class="btnRepayment">立即还款</div>
+    </div>
+</body>
+
+</html>

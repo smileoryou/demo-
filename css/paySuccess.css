@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 0.16rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
+}
+/*支付成功*/
+.paymentstatusSuccess {
+  width: 2.5rem;
+  height: 1.8rem;
+  margin: 0.225rem auto 0 auto;
+  background-image: url(../images/paySuccess.png);
+  background-repeat: no-repeat;
+  background-size: 2.5rem 1.8rem;
+}
+
+/*支付失败*/
+.paymentstatusFail {
+    width: 2.5rem;
+    height: 1.8rem;
+    margin: 0.225rem auto 0 auto;
+    background-image: url(../images/payFailure.png);
+    background-repeat: no-repeat;
+    background-size: 2.5rem 1.8rem;
+  }
+.payP {
+  font-family: PingFangSC-Medium;
+  font-size: 0.17rem;
+  color: #333333;
+  letter-spacing: 0;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+}
+.btnSuccess {
+  width: 92%;
+  height: 0.49rem;
+  background: #118ee9;
+  border-radius: 5px;
+  margin: 0.515rem auto 0 auto;
+  font-family: PingFangSC-Regular;
+  font-size: 0.16rem;
+  color: #ffffff;
+  letter-spacing: 0.01rem;
+  text-align: center;
+  line-height: 0.49rem;
+}
+@media screen and (max-width: 319px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  html {
+    font-size: 110.4px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 160.4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 210.4px;
+  }
+}
